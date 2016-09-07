@@ -1,0 +1,43 @@
+\subsection{MS5-6 Rev2c possible improvements}
+Possible improvements on the MS5-6~Rev2c:
+%\subsubsection{Possible improvements}
+\begin{itemize}
+	\item Torque compensator would benefit of more tuning in regards to the former stability analysis.
+	\item Firmware development for new outputs and faster refresh rates would help to perform frequency responses.
+	\item PID would benefit of more tuning, namely by performing frequency responses.
+	\item PID could be replaced by a more general compensator similar to the one used on torque.
+\end{itemize} 
+
+\subsection{MS7}
+MS7 arms will have a different architecture compared to MS5-6~Rev2c. Therefore, work done on Rev2c may no be valuable for MS7. Major differences, which address a lot of limitations of Rev2c arms, are:
+\begin{itemize}
+	\item Second encoder on the output size may allow vibration damping. If this is the case, torque feedback compensation might be no longer needed.
+	\item Torque loop will be ran at 1~kHz.
+	\item Use of current, velocity and position loops.
+	\item More rigid links.
+	\item Faster chips and better communication will allow faster data acquisition of any needed data.
+\end{itemize}
+
+
+\subsection{Future works}
+Future works currently in scope for vibration damping and controller loops tuning are: 
+\begin{itemize}
+	\item Development of standard methods for controller tuning and stability analysis for MS7.
+	\item Give specific requirements to firmware team in terms of loops design, rates and datalogging for MS7.
+	\item Perform better characterization of Rev2c actuators and arms and develop a simulation model.
+	\item Update of the simulation model to MS7 specifications to speed up controller design.
+\end{itemize}
+
+%\subsubsection{Design changes} 
+%The current torque feedback filter has been fixed for MS 5-6. However design improvements can continue for research purposes which might
+%be useful for MS 7. It is to be noted however that, MS 7 will have very different control architechture than MS 5-6 and results will not 
+%directly feed into it.
+
+
+%\subsection{MS 7}
+%\begin{itemize}
+%	\item With the encoder on the output side, vibrations due to the harmonic drive can possibily be damped by the position loop itself.
+%	If so, torque feedback compensation might be no longer needed.  
+%	\item Simulations - MS 7 hardware will not be available for near future. Simulating Harmonic Drive vibrations, with encoder on the output side
+%	will help speed up control design and stability analysis. 
+%\end{itemize}

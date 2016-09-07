@@ -1,0 +1,89 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'loop2.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1473.99983083bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.4572592)%
+    \put(0.64666553,0.38928524){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.59030124,0.3091336){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$K_p$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{loop2.pdf}}%
+    \put(0.59030124,0.39325844){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$K_d$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{loop2.pdf}}%
+    \put(0.46400987,0.22517307){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\int{}\!dt$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{loop2.pdf}}%
+    \put(0.46400987,0.39342275){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$d/dt$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{loop2.pdf}}%
+    \put(0.59030124,0.22500876){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$K_i$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{loop2.pdf}}%
+    \put(0.66063661,0.33829082){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$+$}}}%
+    \put(0.74263603,0.28627885){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$-$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{loop2.pdf}}%
+    \put(0.84216804,0.30967634){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Actuator}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{loop2.pdf}}%
+    \put(0.47261978,0.13658757){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Compensator}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{loop2.pdf}}%
+    \put(0.26497201,0.32318524){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$+$}}}%
+    \put(0.29554356,0.29062078){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$-$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{loop2.pdf}}%
+    \put(0.69645747,0.28736434){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$+$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{loop2.pdf}}%
+    \put(0.19550117,0.32318524){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{Position Ref $\theta_d$ $[^{\circ}]$}}}%
+    \put(0.82339736,0.08437924){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Torque $[\text{N}\!\!\cdot\!\!\text{m}]$}}}%
+    \put(0.82339736,0.02359226){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Position $\theta$ $[^{\circ}]$}}}%
+    \put(0.66302852,0.13599925){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$K_\tau$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{loop2.pdf}}%
+    \put(0.58966664,0.14811737){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\tau_f$}}}%
+    \put(0.36171546,0.14811737){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\tau$}}}%
+    \put(0.75683084,0.33047832){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$u$}}}%
+    \put(0.74055179,0.19153665){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\tau_c$}}}%
+    \put(0.81478983,0.19606512){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{loop2.pdf}}%
+    \put(0.69387608,0.33086208){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$u_{P}$}}}%
+    \put(0.32698004,0.32287994){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta_{err}$}}}%
+  \end{picture}%
+\endgroup%

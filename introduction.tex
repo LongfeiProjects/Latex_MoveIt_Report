@@ -1,0 +1,9 @@
+The Kinova robot uses a PID loop in its actuator to control its movement. However, the robot can show visible vibrations in some conditions, mainly due to the flexibility of the robot and the mechanical properties of the harmonic drive used in the actuator, that can not be compensated by the PID loop alone. For that purpose, a torque feedback loop is implemented in the four biggest actuators of the MS5-6 Rev2c arms. From the solutions tried at Kinova to damp vibrations, using a torque compensation based on torque measurements (strain gages) and feeding it to the actuator gives the best results.
+
+This document describes the torque feedback loop used, gives details on the compensator transfer function, shows actual performance enhancement results obtained from testing, and discuss both ongoing and future works on MS5-6 Rev2c and MS7 arms.
+
+%This document describes the torque feedback loop used and shows actual performance enhancement results obtained from testing. Please keep in mind that this document is a preliminary version aimed at showing available results alone.
+
+A document titled "Kinova Actuator Controller" has also been provided. It contains a detailed description of the control loop, including PID control, BEMF compensation, friction compensation, torque feedback, etc. The reader is therefore referred to this document if more details on the control loop are required.
+
+

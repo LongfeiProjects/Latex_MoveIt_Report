@@ -1,0 +1,20 @@
+The basic control loop of the controller is shown in fig.~\ref{fig:loop}. One can see that a torque measurement is fed into a torque compensator, multiplied by a gain $K_{\tau}$ and added to the PID output to the actuator. The compensator has 7 poles and 7 zeros. Please note that no additional filtering is applied before or after that compensator. In other words, the torque measurement, i.e. the mean value of the 8 strain gages, is directly taken as input to the compensator and the output is itself fed to the actuator through simple gain $K_\tau$. The torque measurement are refreshed each 7~milliseconds, therefore the torque loop runs at 143Hz. The $z$-transform of the compensator transfer function is:
+\begin{align}
+	\tau_f = K_{B\tau}\frac{b_1 + b_2z^{-1} + b_3z^{-2} + \cdots + b_8z^{-7}}{a_1 + a_2z^{-1} + a_3z^{-2} + \cdots + a_8z^{-7}}, \label{eqn:tf}
+\end{align}
+where $\tau_f$ is the output of the compensator and $K_{B\tau}$ is the gain of the compensator. Parameters $a_1$ to $a_8$ and $b_1$ to $b_8$ can be tuned to obtain desired zeros and poles respectively. The implementation in the firmware is straightforward:
+\begin{align}
+	\tau_{f_k} = \frac{1}{a_1}[K_{B\tau}(b_1\tau_k+b_2\tau_{k-1}+b_3\tau_{k-2}+\cdots+b_8\tau_{k-7})-(a_2\tau_{f_{k-1}}+a_3\tau_{f_{k-2}}+\cdots+a_8\tau_{f_{k-7}})] \label{eqn:firmware},
+\end{align}
+where $k$ is the current step.
+
+	\begin{figure}
+		\begin{center}
+			\def\svgwidth{173mm}%.75\textwidth
+			\input{./images/loop2.pdf_tex}
+			\caption{Basic PID control loop with torque feedback}
+			\label{fig:loop}
+		\end{center}
+	\end{figure}
+
+Please note that in reality, torque is measured in the opposite direction compared to position, and therefore, in the actuator firmware, torque feedback is fed as a positive value to avoid negative gains. See the more detailed documentation "Kinova Actuator Controller" for details.

@@ -1,0 +1,138 @@
+% Template Header
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage[a4paper,margin=15mm]{geometry}
+\usepackage[table]{xcolor}
+%\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+%\usepackage{atbegshi,etoolbox}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\parskip 7.2pt
+
+\def\doctitle{Kinova MoveIt Development Report}
+\def\docauthor{Longfei Zhao}
+\def\docdate{\today}
+\def\docrevision{(Revision 01)}
+\def\doctype{X?.?-01\_Documentation R01}
+\def\docconfidentiality{CONFIDENTIAL - ROS MoveIt}
+\def\docfilename{Kinova-Moveit-Report.pdf}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+% End Template Header
+
+\usepackage[cmex10]{amsmath}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{color}
+\usepackage{transparent}
+%% Utilisation de natbib pour les citations et la bibliographie.
+\usepackage{natbib}
+%% Autres packages.
+\usepackage{amsmath,color,soulutf8,longtable,colortbl,setspace,ifthen,xspace,url,pdflscape}
+
+
+
+%\newif\ifkeeppage
+%\newcommand{\keeppages}[1]{% \keeppages{<csv list>}
+%	\xdef\keep@pages{#1}% Store pages to keep
+%	\AtBeginShipout{% At shipout, decide whether to discard page/not
+%		\keeppagefalse%
+%		\renewcommand*{\do}[1]{% How to handle each page entry in csv list
+%			\ifnum\value{page}=##1\relax%
+%			\keeppagetrue% Page should be kept
+%			\gdef\do####1{}% Do nothing further
+%			\fi%
+%		}%
+%		\expandafter\docsvlist\expandafter{\keep@pages}% Process list of pages to keep
+%		\ifkeeppage\else\AtBeginShipoutDiscard\fi% Discard page/not
+%	}%
+%}
+%\makeatother
+%
+%\keeppages{3}
+
+\begin{document}
+
+\input{kinovacover.tex}
+
+\parindent = 0pt
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\input{introduction.tex}
+
+\newpage
+
+\section{Torque Feedback Loop}
+\input{controlLoop.tex}
+
+\newpage
+
+%\section{Torque Compensator}
+%\input{torqueCompensator.tex}
+
+%\section{Test Method}
+%\input{testMethod}
+
+%\section{Test Results}
+%\input{testsResults.tex}
+
+%\section{Stability Analysis}
+%\input{stabilityAnalysis.tex}
+
+%\section{Possible amelioration and future works}
+%\input{ongoingWork.tex}
+
+%\section{Conclusion}
+%\input{conclusion.tex}
+
+%\newpage
+
+%\section{Ongoing Work}
+%\input{ongoing.tex}
+
+%\newpage
+
+%\section{Torque Feedback Tuning}
+%\input{torqueFeedback.tex}
+
+%\newpage
+
+%\section{Admittance mode, faults and other warnings}
+%\input{warnings.tex}
+
+%\newpage
+
+%\section{Short term objectives}
+%\input{futureWorks.tex}
+
+%\newpage
+
+
+%\section*{Revisions}
+%
+%\begin{tabular}{|m{0.2\textwidth}|m{0.7\textwidth}|}
+%  \hline
+%  Date & Changes                                                              \\ \hline
+%  2016/01/28 & Initial Version                                                \\ \hline
+%\end{tabular}
+%
+\end{document}

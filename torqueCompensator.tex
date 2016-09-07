@@ -1,0 +1,42 @@
+The objective pursued when developing torque compensation is to damp vibration. However, it shall not do so while adversely affecting position tracking. Therefore, gain should be small for the required control bandwidth (up to 5Hz). Moreover, since the torque signal is not filtered, the gain at high frequencies should be low to avoid noise amplification. Since vibration is observed when resonance occurs at the robot natural frequency, the compensator could only let pass through a frequency range covering the problematic configurations corresponding frequencies. Moreover, stability issues limit the gain of the compensator.
+
+As a consequence of the aforementioned reasons, the torque compensator transfer function is designed as a bandpass filter. However, the bandpass is really narrow and the gain is small. The transfer function is defined by the parameters listed in table~\ref{table:compensator} and eq.~\ref{eqn:tf}. The bode plot of the transfer function, including torque feedback gain $K_{\tau}$, is shown in fig.~\ref{fig:bodeComp}. Poles of the continuous transfer function in the root locus are shown in fig.~\ref{??} ?? and discrete ones are shown in fig.~\ref{??}. Poles are listed in table~\ref{??}.
+
+\begin{table}[t]
+	\caption{Vibration damping - torque compensator parameters}
+	\centering                                                                      
+	\hfill \break??
+	\begin{tabular}{c|c||c|c}                                                
+		\hline                                                                          
+		Parameter & Value & Parameter & Value \\
+		\hline
+		$b_1$ & 0.015000 & $a_1$ & 1.000000  \\
+		\hline
+		$b_2$ & -0.027294 & $a_2$ & -3.153210 \\
+		\hline
+		$b_3$ & 0.009323 & $a_3$ & 3.807353 \\
+		\hline
+		$b_4$ & 0.005669 & $a_4$ & -2.084253 \\
+		\hline
+		$b_5$ & -0.002623 & $a_5$ & 0.435096 \\
+		\hline
+		$b_6$ & 0 & $a_6$ & 0 \\
+		\hline
+		$b_7$ & 0 & $a_7$ & 0 \\
+		\hline
+		$b_8$ & 0 & $a_8$ & 0 \\
+		\hline
+		$K_b$ & 1 & $K_{\tau}$ & 1.5 \\
+		\hline
+	\end{tabular}
+	\label{table:compensator}
+\end{table}
+
+	\begin{figure}
+		\begin{center}
+			\def\svgwidth{.75\textwidth}%.75\textwidth
+			\input{./images/bodePlotComp.pdf_tex}
+			\caption{Torque compensator transfer function bode plot (including $K_{\tau}$)}
+			\label{fig:bodeComp}
+		\end{center}
+	\end{figure}
